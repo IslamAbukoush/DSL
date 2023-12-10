@@ -39,15 +39,13 @@ C Simple is a minimalistic programming language developed for a university proje
       ```
     - Note: All variables are considered global variables no matter where you declare them, so it wouldn't be a good idea to declare one inside of a loop, as it will throw an error if the loop runs more than one time.
       ```c
-        int counter = 0;
-        while(counter < 3) {
-          int x = 3;
-          counter += 1;
-        }
-        // "Error while interpreting: Variable 'x' has already been declared."
-    ```
-    
-
+      int counter = 0;
+      while(counter < 3) {
+        int x = 3;
+        counter += 1;
+      }
+      // "Error while interpreting: Variable 'x' has already been declared."
+      ```
 2. **Conditional Statements:**
    - Employ the `if` statement for conditional branching.
       ```c
