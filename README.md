@@ -115,7 +115,7 @@ Follow these steps to create a simple C Simple program:
 
 ## Program Examples
 
-### Program that calculates the area of a circle given the radius
+### Program that calculates the area of a circle given the radius:
 
 ```c
 float pi = 3.14;
@@ -124,7 +124,7 @@ float area = pi * radius ^ 2;
 print(area) // will output '314'
 ```
 
-### Program that calculates the factorial of a number
+### Program that calculates the factorial of a number:
 
 ```c
 int input = 5;
@@ -135,6 +135,21 @@ while(input > 1) {
    input -= 1;
 }
 print(factorial) // will output '120'
+```
+
+### Program that prints the sum of positive numbers between -10 and 10:
+
+```c
+int n = 10;
+int sum = 0;
+int counter = -10;
+while(counter <= n) {
+  if(counter < 0) {
+    sum += counter;
+  }
+  counter += 1;
+}
+print(sum); // will output 55
 ```
 
 ## Try Simple C by yourself
