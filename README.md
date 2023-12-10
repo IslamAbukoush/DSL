@@ -181,6 +181,6 @@ print(factorial) // will output '120'
    ```bash
    ./app file_name.txt
    ```
-   Replace `file_name.txt` with the name of your C Simple code file.
+   Replace `file_name.txt` with the name of your C Simple code file, and the file must be in the same directory as the other C files.
 
 Follow the instructions above to either run it in interactive mode or save it to a file and execute it in executive mode.
