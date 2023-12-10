@@ -94,7 +94,7 @@ C Simple is a minimalistic programming language developed for a university proje
      print(1 > 3 or 1 > 0); // will output '1'
      ```
 8. **Semicolons:**
-   - Semicolons `;` are optional in Simple C, however, it is a good practice to write them, to avoid unexpected behaviour.
+   - Semicolons `;` are optional in Simple C, however, it is a good practice to write them after the end of each instruction, to avoid unexpected behaviour.
 
 ## How to Write a Sample Program
 
