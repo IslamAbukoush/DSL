@@ -4,25 +4,29 @@ C Simple is a minimalistic programming language developed for a university proje
 
 ## Syntax Keywords and Meanings
 
-| Keyword        | Meaning                                      |
-| -------------- | -------------------------------------------- |
-| `int`          | Declare an integer variable.                  |
-| `float`        | Declare a floating-point variable.            |
-| `if`           | Conditional statement.                        |
-| `else`         | Branch for the 'false' condition in an `if`.  |
-| `while`        | Looping construct.                            |
-| `+`, `-`, `*`  | Arithmetic operators (addition, subtraction, multiplication).  |
-| `/`            | Division operator.                            |
-| `^`            | Exponentiation operator.                      |
-| `<`, `>`, `<=`, `>=` | Comparison operators.                 |
-| `==`, `!=`     | Equality and inequality operators.            |
-| `or`           | Logical OR operator.                         |
-| `+=`, `*=`, `/=`, `-=` | Shorthand assignment operators.    |
+| Keyword                | Meaning                                                       |
+| ---------------------- | ------------------------------------------------------------- |
+| `int`                  | Declare an integer variable.                                  |
+| `float`                | Declare a floating-point variable.                            |
+| `if`                   | Conditional statement.                                        |
+| `while`                | Looping construct.                                            |
+| `+`, `-`, `*`          | Arithmetic operators (addition, subtraction, multiplication). |
+| `/`                    | Division operator.                                            |
+| `^`                    | Exponentiation operator.                                      |
+| `<`, `>`, `<=`, `>=`   | Comparison operators.                                         |
+| `==`, `!=`             | Equality and inequality operators.                            |
+| `or`                   | Logical OR operator.                                          |
+| `+=`, `*=`, `/=`, `-=` | Shorthand assignment operators.                               |
 
 ## Instructions on How to Write a Sample Program
 
 1. **Variable Declaration:**
-   - Use `int` or `float` to declare variables.
+   - Use `int` or `float` to declare variables, follow them by the vriable name, and you can optionally initialize thier value by following them with a `=` and then the value.
+```c
+int x = 5;
+float y;
+int z = (3 + 5) / x + 1;
+```
 
 2. **Conditional Statements:**
    - Employ the `if` and optional `else` keywords for conditional branching.
