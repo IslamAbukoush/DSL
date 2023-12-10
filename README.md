@@ -108,14 +108,18 @@ Follow these steps to create a simple C Simple program:
 
 ## Program Examples
 
-### Error-Free Program
+### Program that calculates the area of a circle given the radius
 
 ```c
 float pi = 3.14;
 float radius = 10;
 float area = pi * radius ^ 2;
 print(area) // will output '314'
+```
 
+### Program that calculates the factorial of a number
+
+```c
 int input = 5;
 int factorial = 1;
 
