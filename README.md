@@ -93,14 +93,15 @@ C Simple is a minimalistic programming language developed for a university proje
      print((2 + 4) * 5 - 4 * 6); // will output '6'
      print(1 > 3 or 1 > 0); // will output '1'
      ```
-     
+8. **Semicolons:**
+   - Semicolons `;` are optional in Simple C, however, it is a good practice to write them, to avoid unexpected behaviour.
 
 ## How to Write a Sample Program
 
 Follow these steps to create a simple C Simple program:
 
 1. Declare variables using `int` or `float`.
-2. Use conditional statements (`if` and optional `else`) for decision-making.
+2. Use conditional statement `if` for decision-making.
 3. Implement loops using the `while` construct for repetitive tasks.
 4. Perform arithmetic operations and comparisons.
 5. Utilize shorthand assignment operators for concise variable updates.
