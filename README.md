@@ -125,3 +125,51 @@ while(input > 1) {
 }
 print(factorial) // will output '120'
 ```
+
+## Try Simple C by yourself
+
+### Interactive Mode:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/c-simple.git
+   cd c-simple
+   ```
+
+2. **Compile for Interactive Mode:**
+   ```bash
+   gcc -o app dynamic_array.c dynamic_array_float.c lexer.c parser.c interpreter.c interactive_mode.c
+   ```
+
+3. **Run the Interactive Mode:**
+   ```bash
+   ./app
+   ```
+   This opens the interactive mode where you can execute code line by line.
+
+4. **Enter Code:**
+   - Input your C Simple code line by line.
+   - Press Enter to execute each line.
+
+5. **Exit Interactive Mode:**
+   - Type `0` to exit the interactive mode.
+
+### Executive Mode:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/c-simple.git
+   cd c-simple
+   ```
+
+2. **Compile for Executive Mode:**
+   ```bash
+   gcc -o app dynamic_array.c dynamic_array_float.c lexer.c parser.c interpreter.c execute.c
+   ```
+3. **Run the Executive Mode with a Code File:**
+   ```bash
+   ./app file_name.txt
+   ```
+   Replace `file_name.txt` with the name of your C Simple code file.
+
+Follow the instructions above to either run it in interactive mode or save it to a file and execute it in executive mode.
