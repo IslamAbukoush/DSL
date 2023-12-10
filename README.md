@@ -59,7 +59,7 @@ C Simple is a minimalistic programming language developed for a university proje
      ```
 
 5. **Comparison and Logical Operators:**
-   - Use `<`, `>`, `<=`, `>=`, `==`, `!=`, and `or` for comparisons.
+   - Use `<`, `>`, `<=`, `>=`, `==`, `!=`, `and`, and `or` for comparisons.
      ```c
      int result = 5 >= 3;
      print(result) // will output '1' which means true
