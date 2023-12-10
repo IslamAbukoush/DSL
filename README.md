@@ -1,5 +1,12 @@
 # C Simple Programming Language
 
+- [Syntax Keywords and Meanings](#syntax-keywords-and-meanings)
+- [Instructions on How to Write a Sample Program](#instructions-on-how-to-write-a-sample-program)
+- [Program Examples](#program-examples)
+- [Try Simple C by yourself](#try-simple-c-by-yourself)
+  - [Interactive Mode](#interactive-mode)
+  - [Executive Mode](#executive-mode)
+
 C Simple is a minimalistic programming language developed for a university project. It shares key features with the C language while being designed to be super simple.
 
 ## Syntax Keywords and Meanings
