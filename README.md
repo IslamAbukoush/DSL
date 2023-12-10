@@ -1,7 +1,7 @@
 # C Simple Programming Language
 
 - [Syntax Keywords and Meanings](#syntax-keywords-and-meanings)
-- [Instructions on How to Write a Sample Program](#instructions-on-how-to-write-a-sample-program)
+- [Instructions on Syntax](#instructions-on-syntax)
 - [Program Examples](#program-examples)
 - [Try Simple C by yourself](#try-simple-c-by-yourself)
   - [Interactive Mode](#interactive-mode)
@@ -28,7 +28,7 @@ C Simple is a minimalistic programming language developed for a university proje
 | `or`                   | Logical OR operator.                                          |
 | `+=`, `*=`, `/=`, `-=` | Shorthand assignment operators.                               |
 
-## Instructions on How to Write a Sample Program
+## Instructions on Syntax
 
 1. **Variable Declaration:**
    - Use `int` or `float` to declare variables, follow them by the vriable name, and you can optionally initialize thier value by following them with a `=` and then the value.
