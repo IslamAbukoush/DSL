@@ -111,6 +111,14 @@ C Simple is a minimalistic programming language developed for a university proje
 8. **Semicolons:**
    - Semicolons `;` are optional in Simple C, however, it is a good practice to write them after the end of each instruction, to avoid unexpected behaviour.
 
+
+9. **Comments:**
+   - You can write one line comments using two slashes `//` and end them with a new line, anything on the same line after the `//` will not be read by the lexer.
+   ```c
+     int x = 10;
+     print(x); // This is a comment, you can write here whatever you want and it will not affect the program 
+     ```
+
 ## How to Write a Sample Program
 
 Follow these steps to create a simple C Simple program:
