@@ -103,6 +103,10 @@ float interpret_math(TreeNode* AST) {
         result = left || right;
         break;
     case RAISE:
+        if (right == 0 && left == 0) {
+            printf("Error while interpreting: zero to the power of zero.");
+            exit(0);
+        }
         result = pow(left, right);
         break;
     default:
