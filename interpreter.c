@@ -201,6 +201,9 @@ float base_interpret(TreeNode* AST) {
             break;
         case PRINT:
             return interpret_print(AST);
+        case EXIT:
+            printf("Exiting program...");
+            exit(0);
         case PLUS:
         case MINUS:
         case MULTIPLY:
