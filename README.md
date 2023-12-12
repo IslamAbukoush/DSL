@@ -114,16 +114,16 @@ C Simple is a minimalistic programming language developed for a university proje
 
 9. **Comments:**
    - You can write one line comments using two slashes `//` and end them with a new line, anything on the same line after the `//` will not be read by the lexer.
-   ```c
-     int x = 10;
-     print(x); // This is a comment, you can write here whatever you want and it will not affect the program 
-   ```
+     ```c
+       int x = 10;
+       print(x); // This is a comment, you can write here whatever you want and it will not affect the program 
+     ```
 10. **User input:**
    - Use the special keyword `input` to take input from user.
-   ```c
-     int x = input + 10;
-     print(x); // This will output whatever value you put and add 10 to it
-   ```
+     ```c
+       int x = input + 10;
+       print(x); // This will output whatever value you put and add 10 to it
+     ```
 
 ## How to Write a Sample Program
 
