@@ -31,13 +31,13 @@ C Simple is a minimalistic programming language developed for a university proje
 ## Instructions on Syntax
 
 1. **Variable Declaration:**
-   - Use `int` or `float` to declare variables, follow them by the vriable name, and you can optionally initialize thier value by following them with a `=` and then the value.
+  - Use `int` or `float` to declare variables, follow them by the vriable name, and you can optionally initialize thier value by following them with a `=` and then the value.
       ```c
       int x = 5;
       float y;
       int z = (3 + 5) / x + 1;
       ```
-    - Note: All variables are considered global variables no matter where you declare them, so it wouldn't be a good idea to declare one inside of a loop, as it will throw an error if the loop runs more than one time.
+  - Note: All variables are considered global variables no matter where you declare them, so it wouldn't be a good idea to declare one inside of a loop, as it will throw an error if the loop runs more than one time.
       ```c
       int counter = 0;
       while(counter < 3) {
@@ -47,7 +47,7 @@ C Simple is a minimalistic programming language developed for a university proje
       // "Error while interpreting: Variable 'x' has already been declared."
       ```
 2. **Conditional Statements:**
-   - Employ the `if` statement for conditional branching.
+  - Employ the `if` statement for conditional branching.
       ```c
       if(x > 5 and y < 3)
       {
@@ -56,7 +56,7 @@ C Simple is a minimalistic programming language developed for a university proje
       ```
    
 3. **Loops:**
-   - Use `while` for looping constructs.
+  - Use `while` for looping constructs.
      ```c
      int counter = 0;
      while(counter < 10)
@@ -68,13 +68,13 @@ C Simple is a minimalistic programming language developed for a university proje
      ```
 
 4. **Arithmetic Operations:**
-   - Employ `+`, `-`, `*`, `/`, and `^` for basic arithmetic.
+  - Employ `+`, `-`, `*`, `/`, and `^` for basic arithmetic.
      ```c
      int x = 3 ^ 2 + 3 * 2 * (5 - 2) / 6;
      ```
 
 5. **Comparison and Logical Operators:**
-   - Use `<`, `>`, `<=`, `>=`, `==`, `!=`, `and`, and `or` for comparisons.
+  - Use `<`, `>`, `<=`, `>=`, `==`, `!=`, `and`, and `or` for comparisons.
      ```c
      int result = 5 >= 3;
      print(result) // will output '1' which means true
@@ -87,7 +87,7 @@ C Simple is a minimalistic programming language developed for a university proje
      ```
 
 6. **Shorthand Assignment:**
-   - Use `+=`, `*=`, `/=`, and `-=` for shorthand assignments.
+  - Use `+=`, `*=`, `/=`, and `-=` for shorthand assignments.
      ```c
      float x = 0;
      x += 1;
@@ -101,7 +101,7 @@ C Simple is a minimalistic programming language developed for a university proje
      ```
      
 7. **Print Function:**
-   - Use `print()` for outputing variables or expressions.
+  - Use `print()` for outputing variables or expressions.
      ```c
      int x = 10;
      print(x); // will output '10'
@@ -109,17 +109,17 @@ C Simple is a minimalistic programming language developed for a university proje
      print(1 > 3 or 1 > 0); // will output '1'
      ```
 8. **Semicolons:**
-   - Semicolons `;` are optional in Simple C, however, it is a good practice to write them after the end of each instruction, to avoid unexpected behaviour.
+  - Semicolons `;` are optional in Simple C, however, it is a good practice to write them after the end of each instruction, to avoid unexpected behaviour.
 
 
 9. **Comments:**
-   - You can write one line comments using two slashes `//` and end them with a new line, anything on the same line after the `//` will not be read by the lexer.
+  - You can write one line comments using two slashes `//` and end them with a new line, anything on the same line after the `//` will not be read by the lexer.
      ```c
        int x = 10;
        print(x); // This is a comment, you can write here whatever you want and it will not affect the program 
      ```
 10. **User input:**
-     - Use the special keyword `input` to take input from user.
+  - Use the special keyword `input` to take input from user.
      ```c
        int x = input + 10;
        print(x); // This will output whatever value you put and add 10 to it
