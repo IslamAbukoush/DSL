@@ -37,6 +37,11 @@ C Simple is a minimalistic programming language developed for a university proje
       float y;
       int z = (3 + 5) / x + 1;
       ```
+  - A variable must be declared before assignment, otherwise you will get an error:
+      ```c
+      x = 6; // will throw an error
+      print(x)
+      ```
   - Note: All variables are considered global variables no matter where you declare them, so it wouldn't be a good idea to declare one inside of a loop, as it will throw an error if the loop runs more than one time.
       ```c
       int counter = 0;
@@ -54,6 +59,7 @@ C Simple is a minimalistic programming language developed for a university proje
          z = 3;
       }
       ```
+ - The `if` keyword must be followed by a `(` to show the start of an expression, and after you are done writing the expression you must close it with `)`, after that, you should follow it with a `{` to signify starting a segment of code, after the code is done you should end it with a `}`, not following those rules will throw and error.
    
 3. **Loops:**
   - Use `while` for looping constructs.
@@ -66,13 +72,18 @@ C Simple is a minimalistic programming language developed for a university proje
      }
       // will output 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
      ```
+  - int terms of syntaxt, the `while` loop follows the same rules as the `if` statements, not following those will rules will cause an erorr.
+  - as stated before, it is not adivsed to declare variables inside of a loop, unless you are sure that it will run only one time, which would make it useless.
 
 4. **Arithmetic Operations:**
   - Employ `+`, `-`, `*`, `/`, and `^` for basic arithmetic.
      ```c
      int x = 3 ^ 2 + 3 * 2 * (5 - 2) / 6;
      ```
-
+  - Arithmetic operations are used to create expressions, an expression can be any combination of numbers, variables and operators.
+  - Expressions are used as conditions in `if` and `while` loops, or used as values for variables after evaluation, and are treated as numbers.
+  - Missing a bracket, missing a right or left operand in an operation, are examples of mistakes that will lead to an error.
+  - Arithmetic operators are parsed from left to right, to make it easier to deal with negative numbers, but that does not affect the order of operations nor the result.
 5. **Comparison and Logical Operators:**
   - Use `<`, `>`, `<=`, `>=`, `==`, `!=`, `and`, and `or` for comparisons.
      ```c
@@ -85,6 +96,7 @@ C Simple is a minimalistic programming language developed for a university proje
      result = 5 != 3;
      print(result) // will output '1' which means true
      ```
+ - These opeartors are treated just as arithmetic operators, except they only result in either `0` (signifing false) or `1` (signifing true).
 
 6. **Shorthand Assignment:**
   - Use `+=`, `*=`, `/=`, and `-=` for shorthand assignments.
@@ -99,18 +111,19 @@ C Simple is a minimalistic programming language developed for a university proje
      x -= 2;
      print(x); // will output '0.5'
      ```
-     
+  - these are pretty self explainatory, they are syntactic sugar for instructions, so instead of writing `x = x + 1` we can write it as `x += 1`.
 7. **Print Function:**
-  - Use `print()` for outputing variables or expressions.
+  - Use `print()` for outputing variables or expressions, it takes only one argument which can be a variable or an expression.
      ```c
      int x = 10;
      print(x); // will output '10'
      print((2 + 4) * 5 - 4 * 6); // will output '6'
      print(1 > 3 or 1 > 0); // will output '1'
      ```
+  - The print function will throw an error if you don't follow it with a `(` and end the expression inside of it with a `)`.
+  - Also if you make an error in the expression, but that is not related to the print function directly.
 8. **Semicolons:**
   - Semicolons `;` are optional in Simple C, however, it is a good practice to write them after the end of each instruction, to avoid unexpected behaviour.
-
 
 9. **Comments:**
   - You can write one line comments using two slashes `//` and end them with a new line, anything on the same line after the `//` will not be read by the lexer.
@@ -124,6 +137,20 @@ C Simple is a minimalistic programming language developed for a university proje
      int x = input + 10;
      print(x); // This will output whatever value you put and add 10 to it
     ```
+11. **Exit program:**
+  - Use the function `exit()` to exit the program while executing, the exit function does not take any arguments.
+    ```c
+    int x = 0;
+    while(x < 10) {
+      if(x == 3) {
+        exit() // will exit program when x reaches the value 3
+      }
+      print(x)
+      x += 1
+    }
+    ```
+## Things to know:
+- The language is no space sensitive, meaning that adding more spaces will not affect the program, you can also add new lines anywhere, except inside of expressions or function arguments.
 
 ## How to Write a Sample Program
 
