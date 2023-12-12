@@ -37,7 +37,8 @@ enum Token_Type {
     MULT_ASSIGN,
     DIV_ASSIGN,
     AND,
-    OR
+    OR,
+    INPUT
 };
 
 int is_alpha(char ch);
