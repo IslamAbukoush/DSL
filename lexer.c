@@ -34,7 +34,8 @@ enum Token_Type {
     MULT_ASSIGN,
     DIV_ASSIGN,
     AND,
-    OR
+    OR,
+    INPUT
 };
 
 int is_alpha(char ch) {
@@ -75,7 +76,6 @@ int str_is_num(const char* str) {
 
 int str_is_identifier(const char* str) {
     if (!str || !is_alpha(*str)) {
-        // If the string is NULL or doesn't start with an alphabetic character
         return 0;
     }
 
@@ -227,6 +227,8 @@ DynamicArray identify(DynamicArray array) {
             array.arr[i].intValue = WHILE;
         } else if(are_same(array.arr[i].stringValue, "print")) {
             array.arr[i].intValue = PRINT;
+        } else if(are_same(array.arr[i].stringValue, "input")) {
+            array.arr[i].intValue = INPUT;
         } else if(are_same(array.arr[i].stringValue, "and")) {
             array.arr[i].intValue = AND;
         } else if(are_same(array.arr[i].stringValue, "or")) {
