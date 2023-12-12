@@ -170,6 +170,24 @@ void interpret_var_mod(TreeNode* AST) {
     float_modify(GLOBAL_VARIABLES, AST->left->value,  result);
 }
 
+float ask_for_input() {
+    float number;
+    int validInput;
+
+    printf("Input: ");
+    validInput = scanf("%f", &number);
+    if(validInput == 1) {
+        return number;
+    }
+    if (validInput == 0) {
+        printf("Input error: invalid input format.\n");
+        exit(0);
+    } else {
+        printf("Input error: input failure or end-of-file reached.\n");
+        exit(0);
+    }
+}
+
 float base_interpret(TreeNode* AST) {
     switch (AST->type) {
         case EXECUTE:
@@ -200,6 +218,8 @@ float base_interpret(TreeNode* AST) {
             return str_to_float(AST->value);
         case ID:
             return float_search(GLOBAL_VARIABLES, AST->value);
+        case INPUT:
+            return ask_for_input();
         case IF:
             if (base_interpret(AST->left)) {
                 base_interpret(AST->right);
