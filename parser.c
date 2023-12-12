@@ -320,7 +320,7 @@ TreeNode* parse_if_while_statement(DynamicArray tokens, int start, int end, int 
 TreeNode* parse_print(DynamicArray tokens, int start, int end, int* ptr) {
     start = *ptr + 1;
     if(tokens.arr[start].intValue != L_PAREN) {
-        printf("Error while parsing: function call should have an opening bracket.");
+        printf("Error while parsing: print function call should have an opening bracket.");
         exit(0);
     }
     int b_count = 1;
@@ -348,6 +348,21 @@ TreeNode* parse_print(DynamicArray tokens, int start, int end, int* ptr) {
     print_node->left = exp;
     *ptr = i;
     return print_node;
+}
+
+TreeNode* parse_exit(DynamicArray tokens, int start, int end, int* ptr) {
+    start = *ptr + 1;
+    if(tokens.arr[start].intValue != L_PAREN) {
+        printf("Error while parsing: exit function call should have an opening bracket.");
+        exit(0);
+    }
+    if(tokens.arr[start+1].intValue != R_PAREN) {
+        printf("\nError while parsing: closing bracket for exit function was not found.");
+        exit(0);
+    }
+    TreeNode* exit_node = new_node(EXIT, "exit");
+    *ptr = start+3;
+    return exit_node;
 }
 
 TreeNode* parse_declaration(DynamicArray tokens, int start, int end, int type, int* ptr) {
@@ -434,6 +449,8 @@ TreeNode* parse_code(DynamicArray tokens, int start, int end, TreeNode* right) {
         start = j;
     } else if(type == PRINT) {
         result = parse_print(tokens, start, end, &start);
+    } else if(type == EXIT) {
+        result = parse_exit(tokens, start, end, &start);
     } else {
         int j = start;
         while(!is_end(tokens.arr[j].intValue)) {
