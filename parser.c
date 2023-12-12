@@ -66,6 +66,7 @@ TreeNode* parse_expression(DynamicArray tokens, int start, int end, int* ptr) {
             type == CMP_MORE || 
             type ==  CMP_MORE_EQUAL || 
             type == OR || 
+            type == INPUT || 
             type == AND)) {
             printf("Error while parsing: unexpected token in an expression '%s' .", value);
             exit(0);
@@ -200,6 +201,9 @@ TreeNode* parse_factor(DynamicArray tokens, int start, int end, int* ptr) {
         } else if(type == ID) {
             TreeNode* id = new_node(ID, tokens.arr[start].stringValue);
             return id;
+        } else if(type == INPUT) {
+            TreeNode* input = new_node(INPUT, "input");
+            return input;
         } else {
             printf("Error while parsing: this token does not make sense in the current context '%s'.", tokens.arr[start].stringValue);
             exit(0);
