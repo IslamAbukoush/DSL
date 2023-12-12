@@ -35,7 +35,8 @@ enum Token_Type {
     DIV_ASSIGN,
     AND,
     OR,
-    INPUT
+    INPUT,
+    EXIT
 };
 
 int is_alpha(char ch) {
@@ -113,7 +114,6 @@ DynamicArray separate(char* sourceCode) {
             }
         }
 
-        // other cases
         else {
             if(sourceCode[src_idx] == '=' && sourceCode[src_idx+1] == '=') {
                 token[token_idx++] = '=';
@@ -229,6 +229,8 @@ DynamicArray identify(DynamicArray array) {
             array.arr[i].intValue = PRINT;
         } else if(are_same(array.arr[i].stringValue, "input")) {
             array.arr[i].intValue = INPUT;
+        } else if(are_same(array.arr[i].stringValue, "exit")) {
+            array.arr[i].intValue = EXIT;
         } else if(are_same(array.arr[i].stringValue, "and")) {
             array.arr[i].intValue = AND;
         } else if(are_same(array.arr[i].stringValue, "or")) {
