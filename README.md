@@ -119,7 +119,7 @@ C Simple is a minimalistic programming language developed for a university proje
        print(x); // This is a comment, you can write here whatever you want and it will not affect the program 
      ```
 10. **User input:**
-   - Use the special keyword `input` to take input from user.
+     - Use the special keyword `input` to take input from user.
      ```c
        int x = input + 10;
        print(x); // This will output whatever value you put and add 10 to it
