@@ -120,10 +120,10 @@ C Simple is a minimalistic programming language developed for a university proje
      ```
 10. **User input:**
   - Use the special keyword `input` to take input from user.
-     ```c
-       int x = input + 10;
-       print(x); // This will output whatever value you put and add 10 to it
-     ```
+    ```c
+     int x = input + 10;
+     print(x); // This will output whatever value you put and add 10 to it
+    ```
 
 ## How to Write a Sample Program
 
