@@ -189,6 +189,7 @@ float ask_for_input() {
 }
 
 float base_interpret(TreeNode* AST) {
+    if(AST == NULL) return 0;
     switch (AST->type) {
         case EXECUTE:
             if (AST->right != NULL) {
@@ -222,12 +223,16 @@ float base_interpret(TreeNode* AST) {
             return ask_for_input();
         case IF:
             if (base_interpret(AST->left)) {
-                base_interpret(AST->right);
+                if(AST->right != NULL) {
+                    base_interpret(AST->right);
+                }
             }
             break;
         case WHILE:
             while (base_interpret(AST->left)) {
-                base_interpret(AST->right);
+                if(AST->right != NULL) {
+                    base_interpret(AST->right);
+                }
             }
             break;
         case DECLARE_FLOAT:
