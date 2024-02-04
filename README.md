@@ -27,6 +27,8 @@ C Simple is a minimalistic programming language developed for a university proje
 | `and`                  | Logical AND operator.                                         |
 | `or`                   | Logical OR operator.                                          |
 | `+=`, `*=`, `/=`, `-=` | Shorthand assignment operators.                               |
+| `print`                | variable output function.                                     |
+| `input`                | variable input function.                                      |
 
 ## Instructions on Syntax
 
